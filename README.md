@@ -1,9 +1,25 @@
 # Changelog
 
+### Para quem fará a correção do arquivo:
+
+- Bem vindo, sinta-se a vontade para explorar o resto do repositório!
+- Ainda estou me acostumando com vercionamento, convenções e nomenclatura, mas acredito que este foi uma boa primeira tentativa
+- **Não** me pergunte o que aconteceu com o branch da aula 5, digamos que a distração ao alterar a forma de vercionamento levou ao pulo de alguns passos
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.0.8] - 2022-11-29
+
+### Added
+
+- index.html to root folder to allow easy access
+
+### Removed
+
+- All unnecessary files for assignment delivery
 
 ## [0.0.7] - 2022-11-29
 
