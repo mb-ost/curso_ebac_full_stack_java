@@ -9,6 +9,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Creation of modulo-html-1 branch/folder to follow along the teacher instructions during class
+- Created lists HTML page example
+
+### Changed
+
+- Merged html-aula-3 branch to main branch
+- Lesson based versoning of the code will now will no longer be saved on main branch
+
+### Removed
+
+- Removed lesson based folders, if needed, look for specific lesson's version of the code in the specific lesson's branch 
+
+## [0.0.4] - 2022-11-28
+
+### Added
+
 - Creation of html-aula-3 branch/folder to follow along the teacher instructions during class
 
 ### Changed
