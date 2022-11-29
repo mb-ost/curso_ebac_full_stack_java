@@ -5,16 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.0.4] - 2022-11-28
+## [0.0.6] - 2022-11-29
 
 ### Added
 
-- Creation of modulo-html-1 branch/folder to follow along the teacher instructions during class
+- Created html-aula-6 branch
+- Created forms.html HTML page example
+
+### Fixed
+
+- README.MD dates and verson number misstype
+
+## [0.0.5] - 2022-11-29
+
+### Added
+
+- Creation of modulo-html-1 folder to follow along the teacher instructions during class
 - Created lists HTML page example
 
 ### Changed
 
-- Merged html-aula-3 branch to main branch
+- Merged html-aula-4 branch to main branch
 - Lesson based versoning of the code will now will no longer be saved on main branch
 
 ### Removed
