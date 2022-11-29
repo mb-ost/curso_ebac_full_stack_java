@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.7] - 2022-11-29
+
+### Added
+
+- Media folder with sample image, audio and video
+- media.html to follow along class instructions
+
+### Changed
+
+- Included link to media.html from index.html
+
 ## [0.0.6] - 2022-11-29
 
 ### Added
