@@ -3,7 +3,7 @@
 ### Para quem fará a correção do arquivo:
 
 - Bem vindo, sinta-se a vontade para explorar o resto do repositório!
-- Ainda estou me acostumando com vercionamento, convenções e nomenclatura, mas acredito que este foi uma boa primeira tentativa
+- Ainda estou me acostumando com vercionamento, convenções e nomenclatura, mas acredito que esta foi uma boa primeira tentativa
 - **Não** me pergunte o que aconteceu com o branch da aula 5, digamos que a distração ao alterar a forma de vercionamento levou ao pulo de alguns passos
 
 All notable changes to this project will be documented in this file.
