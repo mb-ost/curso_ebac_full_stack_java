@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.10] - 2022-11-30
+
+### Changed
+
+- Moved index.html main.css and imagens folder to main directory folder
+- Added new sections for entretainment and technology to main.css and index.html
+
+### Removed
+
+- Class Related files not necessary for activity completion, including modulo-html-1 and modulo-css-1 folders
+
 ## [0.1.7] - 2022-11-30
 
 ### Changed
