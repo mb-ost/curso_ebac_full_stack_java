@@ -1,7 +1,7 @@
 const form = document.getElementById('form-atividade');
 const imgAprovado = '<img src="./images/aprovado.png" alt="emoji celebrando">'
 const imgReprovado = '<img src="./images/reprovado.png" alt="emoji decepcionado">'
-const media = parseFloat(prompt("Digite a nota minima; "));
+const media = parseFloat(prompt("Digite a nota minima; ", _default='7'));
 let linhas = '';
 const atividades = [];
 const notas = [];
@@ -43,7 +43,7 @@ function updateTable() {
     corpoTabela.innerHTML = linhas;
 
     const mediaFinal = updateAvg();
-    document.getElementById('media-final-valor').innerHTML = mediaFinal;
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= media ? spanAprovado : spanReprovado;
 }
 
