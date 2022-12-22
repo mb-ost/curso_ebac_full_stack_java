@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+
+    <!--------------FONTS---------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-------FONT AWESOME---------->
+    <script src="https://kit.fontawesome.com/41297ef283.js" crossorigin="anonymous"></script>
+    <!-------------CSS------------->
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de tarefas</h1>
+        </header>
+        <form>
+            <div>
+                <input type="text" id="nome-tarefa" required placeholder="Nome da tarefa">
+                <textarea id="descricao-tarefa" placeholder="Descrição da tarefa"></textarea>
+            </div>
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <td>Tarefa</td>
+                    <td>Opções</td>
+                </tr>
+            </thead>
+            <tbody>
+                <div>
+                    <tr>
+                        <td class="nome-tarefa">test</td>
+                        <td class="opcoes-tarefa">test2</td>
+                    </tr>
+                    <tr>
+                        <td class="descricao" colspan="2">teste3</td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td class="nome-tarefa">test</td>
+                        <td class="opcoes-tarefa">test2</td>
+                    </tr>
+                    <tr>
+                        <td class="descricao" colspan="2">teste3</td>
+                    </tr>
+                </div>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
