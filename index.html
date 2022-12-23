@@ -21,39 +21,37 @@
             <h1>Lista de tarefas</h1>
         </header>
         <form>
+            <input type="text" id="nome-tarefa" required placeholder="Nome da tarefa">
             <div>
-                <input type="text" id="nome-tarefa" required placeholder="Nome da tarefa">
                 <textarea id="descricao-tarefa" placeholder="Descrição da tarefa"></textarea>
+                <button type="submit">Adicionar +</button>
             </div>
-            <button type="submit">Adicionar +</button>
         </form>
         <table cellspacing="0">
             <thead>
                 <tr>
+                    <td></td>
                     <td>Tarefa</td>
-                    <td>Opções</td>
+                    <td>Excluir</td>
                 </tr>
             </thead>
             <tbody>
-                <div>
-                    <tr>
-                        <td class="nome-tarefa">test</td>
-                        <td class="opcoes-tarefa">test2</td>
-                    </tr>
-                    <tr>
-                        <td class="descricao" colspan="2">teste3</td>
-                    </tr>
-                </div>
-                <div>
-                    <tr>
-                        <td class="nome-tarefa">test</td>
-                        <td class="opcoes-tarefa">test2</td>
-                    </tr>
-                    <tr>
-                        <td class="descricao" colspan="2">teste3</td>
-                    </tr>
-                </div>
-
+                <tr>
+                    <td class="expandir-tarefa tar1" rowspan="2"><i class="fa-solid fa-plus"></i></td>
+                    <td class="nome-tarefa tar1">test task</td>
+                    <td class="opcoes-tarefa tar1" rowspan="2"><i class="fa-solid fa-trash-can"></i></td>
+                </tr>
+                <tr>
+                    <td class="descricao tar1">test task description</td>
+                </tr>
+                <tr>
+                    <td class="expandir-tarefa tar2" rowspan="2"><i class="fa-solid fa-plus"></i></td>
+                    <td class="nome-tarefa tar2">test 2 task</td>
+                    <td class="opcoes-tarefa tar2 " rowspan="2"><i class="fa-solid fa-trash-can"></i></td>
+                </tr>
+                <tr>
+                    <td class="descricao tar2">test 2 task description</td>
+                </tr>
             </tbody>
         </table>
     </div>
