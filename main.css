@@ -95,3 +95,6 @@ table tr td {
 .terminada {
     text-decoration: line-through;
 }
+.descricao {
+    display: none;
+}

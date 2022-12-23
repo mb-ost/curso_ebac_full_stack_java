@@ -5,7 +5,7 @@ TODO:
         add new title, description and done=false to task list array
         render table with new information
 */
-$('tr').children('.descricao').hide();
+//$('tr').children('.descricao').hide();
 $(document).ready(function () {
     //---------Registrar Valores no formulario
     $('form').on('submit', function(e){
@@ -30,6 +30,10 @@ $(document).ready(function () {
         $(this).addClass('terminada');
         $(this).parent().prev().children('.nome-tarefa').addClass('terminada');
     })
+    $('[data-toggle="deletar-tarefa"]').click(function() {
+        $(this).parent().next().remove();
+        $(this).parent().remove();
+    });
 
 });
 //------------Func Expandir Desc Tabela----------------------------------
