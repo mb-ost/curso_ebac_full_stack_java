@@ -5,7 +5,7 @@
     font-family: Roboto, sans-serif;
 }
 body {
-    background-color: #b8c6d5;
+    background-color: #b2bac2;
 }
 
 .container {
@@ -15,7 +15,7 @@ body {
     padding: 16px 32px;
     background-color: #fff;
     border-radius: 16px;
-    box-shadow: 0 0 16px #a8b6c5;
+    box-shadow: 0 0 16px #767d85;
 }
 
 header {
@@ -56,7 +56,7 @@ form button {
     font-size: 16px;
     padding: 8px;
     border: none;
-    background-color: #d8e6f5;
+    background-color: #e8edf3;
     border-radius: 16px;
     /*box-shadow: 0 0 4px #d8e6f5;*/
 }
@@ -66,9 +66,9 @@ form div textarea {
 
 table {
     width: 100%;
-    margin-top: 32px;
+    margin-top: 8px;
     padding: 16px;
-    background-color: #d8e6f5;
+    background-color: #e8edf3;
     border-radius: 16px;
 }
 table tr {
@@ -79,13 +79,19 @@ table tr td {
     text-align: center;
 }
 .nome-tarefa {
-    width: 75%;
+    width: 70%;
 }
-.expandir-tarefa,
+.descricao-controle {
+    width: 15%;
+}
+.delete-tarefa {
+    width: 15%;
+}
+.descricao-controle,
 .nome-tarefa,
-.opcoes-tarefa {
+.delete-tarefa {
     border-top: 1px solid #a8b6c5;
 }
-.fa-minus {
-    display: none;
+.terminada {
+    text-decoration: line-through;
 }
