@@ -86,3 +86,6 @@ table tr td {
 .opcoes-tarefa {
     border-top: 1px solid #a8b6c5;
 }
+.fa-minus {
+    display: none;
+}
