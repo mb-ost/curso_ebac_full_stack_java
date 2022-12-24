@@ -10,6 +10,11 @@ $(document).ready(function () {
     //---------Registrar Valores no formulario
     $('form').on('submit', function(e){
         e.preventDefault();
+
+        const nomeTarefa = $('#nome-tarefa');
+        const descricaoTarefa = $('descricao-tarefa');
+
+
     });
 
     //---------Detectar click para expandir ou retrair Descrição---------
@@ -23,34 +28,47 @@ $(document).ready(function () {
     })
     //--------Riscar valores da tarefa-------------------------------------
     $('[data-toggle="clica-titulo"]').click(function () {
+        const descricaoTd = $(this).parent().next().children('.descricao');
         $(this).addClass('terminada');
-        $(this).parent().next().children('.descricao').addClass('terminada');
+        descricaoTd.addClass('terminada');
     })
     $('[data-toggle="clica-tarefa"]').click(function () {
+        const tituloTd = $(this).parent().prev().children('.nome-tarefa');
         $(this).addClass('terminada');
-        $(this).parent().prev().children('.nome-tarefa').addClass('terminada');
+        tituloTd.addClass('terminada');
     })
+    //--------Remover tarefa-------------------------------------------------
     $('[data-toggle="deletar-tarefa"]').click(function() {
-        $(this).parent().next().remove();
-        $(this).parent().remove();
+        const linhaTabela = $(this).parent();
+        const proximaLinha = linhaTabela.next();
+        proximaLinha.remove();
+        linhaTabela.remove();
     });
 
 });
 //------------Func Expandir Desc Tabela----------------------------------
 function expandirDescricao(item) {
-    item.parent().next().children('.descricao').slideDown(50);
-    item.parent().next().children('.descricao').attr('colspan', 1);
+    const descricaoTd = item.parent().next().children('.descricao');
+    const deleteTd = item.parent().children('.delete-tarefa');
+    const iconeControle = item.children('i');
+
+    descricaoTd.slideDown(50);
+    descricaoTd.attr('colspan', 1);
     item.attr('rowspan', 2);
-    item.parent().children('.delete-tarefa').attr('rowspan', 2);
-    item.children('i').removeClass('fa-plus');
-    item.children('i').addClass('fa-minus');
+    deleteTd.attr('rowspan', 2);
+    iconeControle.removeClass('fa-plus');
+    iconeControle.addClass('fa-minus');
 }
 //------------Func Retrair Desc Tabela----------------------------------
 function retrairDescricao(item) {
+    const descricaoTd = item.parent().next().children('.descricao');
+    const deleteTd = item.parent().children('.delete-tarefa');
+    const iconeControle = item.children('i');
+
     item.attr('rowspan', 1);
-    item.parent().children('.delete-tarefa').attr('rowspan', 1);
-    item.parent().next().children('.descricao').attr('colspan', 3);
-    item.parent().next().children('.descricao').slideUp(50);
-    item.children('i').removeClass('fa-minus');
-    item.children('i').addClass('fa-plus');
+    deleteTd.attr('rowspan', 1);
+    descricaoTd.attr('colspan', 3);
+    descricaoTd.slideUp(50);
+    iconeControle.removeClass('fa-minus');
+    iconeControle.addClass('fa-plus');
 }
