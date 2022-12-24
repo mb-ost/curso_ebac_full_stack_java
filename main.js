@@ -29,34 +29,33 @@ $(document).ready(function () {
         nomeTarefa.val('');
         descricaoTarefa.val('');
     })
-});
-
-//---------Detectar click para expandir ou retrair Descrição---------
-$(document).on('click', '.descricao-controle', function () {
-    if($(this).attr('rowspan') == 1){
-        expandirDescricao($(this));
-    } else {
-        retrairDescricao($(this));
-    }
-    
-})
-//--------Riscar valores da tarefa-------------------------------------
-$(document).on('click', '.nome-tarefa', function () {
-    const descricaoTd = $(this).parent().next().children('.descricao');
-    $(this).addClass('terminada');
-    descricaoTd.addClass('terminada');
-})
-$(document).on('click', '.descricao', function () {
-    const tituloTd = $(this).parent().prev().children('.nome-tarefa');
-    $(this).addClass('terminada');
-    tituloTd.addClass('terminada');
-})
-//--------Remover tarefa-------------------------------------------------
-$(document).on('click', '.delete-tarefa', function () {
-    const linhaTabela = $(this).parent();
-    const proximaLinha = linhaTabela.next();
-    proximaLinha.remove();
-    linhaTabela.remove();
+    //---------Detectar click para expandir ou retrair Descrição---------
+    $(document).on('click', '.descricao-controle', function () {
+        if($(this).attr('rowspan') == 1){
+            expandirDescricao($(this));
+        } else {
+            retrairDescricao($(this));
+        }
+        
+    })
+    //--------Riscar valores da tarefa-------------------------------------
+    $(document).on('click', 'tbody .nome-tarefa', function () {
+        const descricaoTd = $(this).parent().next().children('.descricao');
+        $(this).addClass('terminada');
+        descricaoTd.addClass('terminada');
+    })
+    $(document).on('click', 'tbody .descricao', function () {
+        const tituloTd = $(this).parent().prev().children('.nome-tarefa');
+        $(this).addClass('terminada');
+        tituloTd.addClass('terminada');
+    })
+    //--------Remover tarefa-------------------------------------------------
+    $(document).on('click', 'tbody .delete-tarefa', function () {
+        const linhaTabela = $(this).parent();
+        const proximaLinha = linhaTabela.next();
+        proximaLinha.remove();
+        linhaTabela.remove();
+    });
 });
 //------------Func Expandir Desc Tabela----------------------------------
 function expandirDescricao(item) {
