@@ -5,17 +5,28 @@ TODO:
         add new title, description and done=false to task list array
         render table with new information
 */
-//$('tr').children('.descricao').hide();
 $(document).ready(function () {
-    //---------Registrar Valores no formulario
+    //---------Registrar Valores no formulario----------------------------
     $('form').on('submit', function(e){
         e.preventDefault();
 
         const nomeTarefa = $('#nome-tarefa');
         const descricaoTarefa = $('descricao-tarefa');
-
-
-    });
+        $(`
+        <tr>
+            <td class="descricao-controle" rowspan="1" data-toggle='mostrar-descricao'>
+                <i class="fa-solid fa-plus"></i>
+            </td>
+            <td class="nome-tarefa" data-toggle="clica-titulo" value="1">test 2 task</td>
+            <td class="delete-tarefa" rowspan="1" data-toggle="deletar-tarefa">
+                <i class="fa-solid fa-trash-can"></i>
+            </td>
+        </tr>
+        <tr>
+            <td class="descricao" data-toggle="clica-tarefa">test 2 task description</td>
+        </tr>
+        `).appendTo('tbody');
+    })
 
     //---------Detectar click para expandir ou retrair Descrição---------
     $('[data-toggle="mostrar-descricao"]').click(function () {
