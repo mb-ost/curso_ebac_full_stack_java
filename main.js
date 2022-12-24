@@ -26,6 +26,8 @@ $(document).ready(function () {
             <td class="descricao">${descricaoTarefa.val()}</td>
         </tr>
         `).appendTo('tbody');
+        nomeTarefa.val('');
+        descricaoTarefa.val('');
     })
 });
 
