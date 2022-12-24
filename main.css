@@ -58,7 +58,10 @@ form button {
     border: none;
     background-color: #e8edf3;
     border-radius: 16px;
-    /*box-shadow: 0 0 4px #d8e6f5;*/
+}
+form button:hover {
+    cursor: pointer;
+    background-color: #d8dadd;
 }
 form div textarea {
     height: 5em;
@@ -94,7 +97,4 @@ table tr td {
 }
 .terminada {
     text-decoration: line-through;
-}
-.descricao {
-    display: none;
 }
