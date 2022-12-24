@@ -1,10 +1,3 @@
-/*
-TODO:
-    when adicionar + is pressed:
-        validate fields title and description
-        add new title, description and done=false to task list array
-        render table with new information
-*/
 $(document).ready(function () {
     //---------Registrar Valores no formulario----------------------------
     $('form').on('submit', function(e){
