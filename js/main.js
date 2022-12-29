@@ -32,7 +32,6 @@ jQuery.validator.addMethod("cpf", function(value, element) {
     let cpf = value.replace('-','')
 
     while(cpf.length < 11) cpf = "0"+ cpf;
-    const expReg = /^0+$|^1+$|^2+$|^3+$|^4+$|^5+$|^6+$|^7+$|^8+$|^9+$/;
     //------Primeiro Digito-------
     let cpfArray = [];
     let contDigito = new Number;
@@ -52,7 +51,7 @@ jQuery.validator.addMethod("cpf", function(value, element) {
     //------Validar Digitos---------
     let retorno = true;
 
-    if ((cpf.charAt(9) != cpfArray[9]) || (cpf.charAt(10) != cpfArray[10]) || cpf.match(expReg)) retorno = false;
+    if ((cpf.charAt(9) != cpfArray[9]) || (cpf.charAt(10) != cpfArray[10])) retorno = false;
 
     return this.optional(element) || retorno;
 
