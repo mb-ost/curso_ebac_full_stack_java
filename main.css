@@ -31,6 +31,13 @@ header h1 {
 .form-field {
     padding: 8px 0;
 }
+.form-field div {
+    display: flex;
+    justify-content: space-between;
+}
+.form-field > div {
+    width: 100%;
+}
 .form-field label {
     display: block;
     font-size: 16px;
@@ -42,6 +49,24 @@ form button {
     font-size: 18px;
     border: 1px solid #899;
     border-radius: 8px;
+}
+.endereco-linha-1 div,
+.endereco-linha-2 div {
+    display: block;
+}
+.endereco-linha-2 div {
+    margin: 8px 0;
+    width: 49%;
+}
+.endereco-linha-1 input,
+.endereco-linha-2 input {
+    width: 100%;
+}
+.rua {
+    width: 80%;
+}
+.complemento {
+    width: 18%;
 }
 form button {
     margin: 24px 0;
