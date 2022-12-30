@@ -51,7 +51,7 @@ $(document).ready(function () {
             email: 'Por favor, Insira o seu E-Mail.',
             telefone: 'Por favor, Insira o seu telefone.',
             cpf: 'Por favor, Insira o seu CPF.',
-            rua: 'Por favor, Insira o nome da sua rua.',
+            rua: 'Por favor, Insira o nome da rua e número.',
             complemento: 'Incompleto.',
             bairro: 'Por favor, Insira o nome do bairro que você mora.',
             cidade: 'Por favor, Insira o nome da cidade que você mora.'
