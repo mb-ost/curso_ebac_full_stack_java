@@ -47,7 +47,7 @@ $(document).ready(function () {
             }
         },
         messages: {
-            nome: 'Por favor, insira o seu nome.',
+            nome: 'Por favor, insira o seu nome completo.',
             email: 'Por favor, Insira o seu E-Mail.',
             telefone: 'Por favor, Insira o seu telefone.',
             cpf: 'Por favor, Insira o seu CPF.',
