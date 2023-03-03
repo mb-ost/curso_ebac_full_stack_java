@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 300px;
+    display: block;
+}
+
+div {
+    background-color: yellow;
+    height: 100px;
+    width: 100vw;
+    margin: 16px 0;
+}
