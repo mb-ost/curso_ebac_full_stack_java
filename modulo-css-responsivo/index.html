@@ -21,7 +21,10 @@
                 <button type="submit">Pesquisar</button>
             </form>
         </div>
-        <nav>
+        <div class="botao-menu">
+            <button type="button">Abrir Menu</button>
+        </div>
+        <nav class="container">
             <ul class="menu">
                 <li>
                     Esportes
@@ -56,5 +59,94 @@
             <div class="clear"></div>
         </nav>
     </header>
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Em destaque</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320">
+                        <h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium dolore sint enim vitae possimus obcaecati quibusdam nihil
+                        </h3>
+                    </a>
+                </article>
+            </section>
+            <section>
+                <h2>Últimas Notícias</h2>
+                <div class="noticias">
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320">
+                            <h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium dolore sint enim vitae possimus obcaecati quibusdam nihil
+                            </h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320">
+                            <h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium dolore sint enim vitae possimus obcaecati quibusdam nihil
+                            </h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320">
+                            <h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium dolore sint enim vitae possimus obcaecati quibusdam nihil
+                            </h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320">
+                            <h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium dolore sint enim vitae possimus obcaecati quibusdam nihil
+                            </h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <section class="novidades">
+                <h2>Novidades</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320">
+                        <h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium dolore sint enim vitae possimus obcaecati quibusdam nihil
+                        </h3>
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320">
+                        <h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium dolore sint enim vitae possimus obcaecati quibusdam nihil
+                        </h3>
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320">
+                        <h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium dolore sint enim vitae possimus obcaecati quibusdam nihil
+                        </h3>
+                    </a>
+                </article>
+            </section>
+        </aside>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
 </body>
 </html>
