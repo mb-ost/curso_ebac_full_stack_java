@@ -1,0 +1,63 @@
+.conteudo {
+    margin-top: 64px;
+}
+
+body {
+    height: 100%;
+    background: url(./media/bg.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    
+}
+
+header {
+    margin-top: 32px;
+}
+header span {
+    color: #e10;
+    font-weight: bold;
+}
+
+.conteudo {
+    height: 470px;
+}
+.conteudo label,
+.conteudo input {
+    margin-bottom: 16px;
+}
+.conteudo .descricao {
+    margin-top: 200px;
+}
+
+form {
+    margin-top: 10vh;
+    padding: 16px;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: -1px 1px 30px 1px rgba(0, 0, 0, 0.4);
+}
+.form-control {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+.btn-info {
+    margin-top: 18px;
+    background-color: rgba(0, 200, 255, 0.2);
+    border-color: transparent;
+    color: #fff;
+    width: 100%;
+}
+.btn-info:hover {
+    background-color: rgba(0, 200, 255, 0.6);
+    border-color: transparent;
+    color: #fff;
+    width: 100%;
+}
