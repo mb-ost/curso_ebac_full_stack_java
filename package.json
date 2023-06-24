@@ -1,0 +1,15 @@
+{
+  "name": "curso_ebac_full_stack_java",
+  "version": "1.0.0",
+  "description": "All notable changes to this project will be documented in this file.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/main.scss build/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.6"
+  }
+}
