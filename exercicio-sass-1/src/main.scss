@@ -1,0 +1,94 @@
+@use 'config/reset';
+@use 'config/vars';
+
+@function proportionalSpacing($value: 1) {
+    @return ($value*0.5)+em;
+}
+
+body {
+    background-color: vars.$bgColor;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: vars.$secundaryColor;
+    position: sticky;
+    top: 0;
+    left: 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: proportionalSpacing(2) 0;
+    }
+    
+}
+.menu {
+    display: flex;
+
+    li {
+        font-weight: bold;
+        margin-left: proportionalSpacing(3);
+
+        a {
+            color: vars.$txtLight;
+            text-decoration: none;
+        }
+    }
+}
+section {
+    padding: proportionalSpacing(7) 0;
+}
+.products {
+    margin-top: proportionalSpacing(5);
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+}
+.product-item img {
+    width: 100%;
+    border-radius: proportionalSpacing(2);
+}
+.product-button {
+    display: block;
+    background-color: vars.$primaryColor;
+    color: vars.$txtLight;
+    text-align: center;
+    padding: proportionalSpacing(1) 0;
+    border-radius: proportionalSpacing(1);
+    margin-top: proportionalSpacing(1);
+    text-decoration: none;
+    &:hover {
+        background-color: lighten(vars.$primaryColor, 10%);
+    }
+}
+
+@media screen and (max-width: vars.$tablet) {
+    .container{
+        max-width: 80%;
+    }
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: vars.$mobile) {
+    .products {
+        display: block;
+    }
+    .product-item {
+        margin-bottom: proportionalSpacing(4);
+    }
+}
