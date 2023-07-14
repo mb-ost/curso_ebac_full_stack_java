@@ -1,0 +1,106 @@
+@import 'reset.less';
+@import 'maps.less';
+
+@breakpointMobile: ~"(max-width:767px)";
+@breakpointTablet: ~"(min-width:768px) and (max-width:1023px)";
+
+.dpFlex {
+    display: flex;
+}
+.btnTxt {
+    color: #colors[txt];
+    text-decoration: none;
+}
+.w80 {
+    max-width: 80%;
+}
+
+body {
+    background-color: #f5f6fa;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: #colors[bgHeader];
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        
+        .dpFlex();
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+}
+.menu {
+    .dpFlex();
+    li {
+        font-weight: bold;
+        margin-left: 24PX;
+        a {
+            .btnTxt();
+        }
+    }
+}
+section {
+    padding: 56px 0;
+}
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+}
+.product-item {
+    img {
+        width: 100%;
+        border-radius: 16px;
+    }
+    &-button {
+        display: block;
+        background-color: #colors[bgButton];
+        text-align: center;
+        padding: 8px 0;
+        border-radius: 8px;
+        margin-top: 8px;
+        .btnTxt();
+        &:hover {
+            background-color: #colors[bgBtnHover];
+        }
+    }
+}
+
+@media @breakpointMobile {
+    .container {
+        .w80();
+    }
+    .products {
+        display: block;
+    }
+    .product-item {
+        margin-bottom: 32px;
+    }
+}
+
+@media @breakpointTablet {
+    .container {
+        .w80();
+    }
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
