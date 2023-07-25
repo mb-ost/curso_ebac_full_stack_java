@@ -37,6 +37,10 @@ module.exports = function(grunt) {
                         {
                             match: 'ENDERECO_DO_JS',
                             replacement: '../src/scripts/main.js'
+                        },
+                        {
+                            match: 'ENDERECO_DAS_IMGS',
+                            replacement: '../src/img'
                         }
                     ]
                 },
@@ -59,7 +63,12 @@ module.exports = function(grunt) {
                         {
                             match: 'ENDERECO_DO_JS',
                             replacement: './scripts/main.min.js'
+                        },
+                        {
+                            match: 'ENDERECO_DAS_IMGS',
+                            replacement: './img'
                         }
+                        
                     ]
                 },
                 files: [
