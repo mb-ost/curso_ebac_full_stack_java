@@ -32,7 +32,7 @@ module.exports = function(grunt) {
                     patterns: [
                         {
                             match: 'ENDERECO_DO_CSS',
-                            replacement: './styles/main.css'
+                            replacement: './styles/main.smacss'
                         },
                         {
                             match: 'ENDERECO_DO_JS',
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
                     patterns: [
                         {
                             match: 'ENDERECO_DO_CSS',
-                            replacement: './styles/main.min.css'
+                            replacement: './styles/main.min.smacss'
                         },
                         {
                             match: 'ENDERECO_DO_JS',
